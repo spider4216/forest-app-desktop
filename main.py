@@ -43,7 +43,7 @@ def notifications(bus, message):
         time.sleep(5 * 60)
         timeoutSound.play()
       else:
-        subprocess.call(["/usr/bin/stopwatch", "-backward", "000:15:00.000"])
+        subprocess.Popen(["/usr/bin/stopwatch", "-backward", "000:15:00.000"])
         time.sleep(15 * 60)
         timeoutSound.play()
 
